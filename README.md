@@ -45,3 +45,13 @@ To run unit tests, run the following command
 ```bash
   npm run test
 ```
+
+## **_The Team!_**
+We are 8-bit!
+
+- [Ely Dreaves](https://github.com/SimplyEly)
+- [Rosie Jones](https://github.com/rosiegracejones)
+- [Bernard Molyneux](https://github.com/citizenbabbage)
+- [Michael Hawkes](https://github.com/octohmy)
+- [Hung Vo](https://github.com/hungalunga)
+- [Aisling Brogan-Smith](https://github.com/ashwantspizza)
