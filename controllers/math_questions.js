@@ -8,14 +8,12 @@ export async function getQuestions() {
   return questions;
 }
 
-export async function tenQuestions() {
+export async function getAQuestion() {
   const data = await fs.readFile(filename);
   const questions = JSON.parse(data);
   const i = Math.floor(Math.random() * questions.length);
-  console.log(i);
-  const tenQuestions = questions.slice(i, i + 10);
-  console.table(tenQuestions);
-  return tenQuestions;
+  const question = questions[i];
+  return question;
 }
 
 export async function tenRandomQuestions() {

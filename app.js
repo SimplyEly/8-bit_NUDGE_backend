@@ -2,7 +2,7 @@
 import express from "express";
 import cors from "cors";
 
-import { getQuestions, tenQuestions, tenRandomQuestions } from "./controllers/math_questions.js";
+import { getQuestions, getAQuestions, tenRandomQuestions } from "./controllers/math_questions.js";
 
 const app = express();
 
@@ -18,6 +18,11 @@ app.get("/", (req, res) => {
 app.get("/math_questions", async function (req, res) {
   const Questions = await tenRandomQuestions();
   res.send(Questions);
+});
+
+app.get("/daily_question", async function (req, res) {
+  const Question = await getAQuestions();
+  res.send(Question);
 });
 
 const port = 3001;
