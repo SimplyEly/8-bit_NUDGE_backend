@@ -21,7 +21,7 @@ app.get("/math_questions", async function (req, res) {
 });
 
 app.get("/daily_question", async function (req, res) {
-  const Question = await getAQuestions();
+  const Question = await getAQuestion();
   res.send(Question);
 });
 
