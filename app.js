@@ -2,7 +2,7 @@
 import express from "express";
 import cors from "cors";
 
-import { getQuestions, getAQuestion, tenRandomQuestions } from "./controllers/math_questions.js";
+import { getQuestions, getAQuestion, tenRandomQuestions, geometryQuestions, algebraQuestions, trigQuestions } from "./controllers/math_questions.js";
 
 const app = express();
 
@@ -25,7 +25,22 @@ app.get("/daily_question", async function (req, res) {
   res.send(Question);
 });
 
+app.get("/math_questions/geometry", async function (req, res) {
+  const Questions = await geometryQuestions();
+  res.send(Questions);
+});
+
+app.get("/math_questions/algebra", async function (req, res) {
+  const Questions = await algebraQuestions();
+  res.send(Questions);
+});
+
+app.get("/math_questions/trig", async function (req, res) {
+  const Questions = await trigQuestions();
+  res.send(Questions);
+});
+
 const port = 3001;
 app.listen(port, () => {
-  console.log(`Server is running on port: ${port}`);
+  console.log(`Server is running on port: http://localhost:${port}`);
 });

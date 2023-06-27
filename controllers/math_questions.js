@@ -29,3 +29,24 @@ export async function tenRandomQuestions() {
   }
   return tenRandomQuestions;
 }
+
+export async function geometryQuestions() {
+  const data = await fs.readFile(filename);
+  const questions = JSON.parse(data);
+  const geometryQuestions = questions.filter(question => question.topic === "Geometry");
+  return geometryQuestions;
+}
+
+export async function algebraQuestions() {
+  const data = await fs.readFile(filename);
+  const questions = JSON.parse(data);
+  const algebraQuestions = questions.filter(question => question.topic === "Algebra");
+  return algebraQuestions;
+}
+
+export async function trigQuestions() {
+  const data = await fs.readFile(filename);
+  const questions = JSON.parse(data);
+  const trigQuestions = questions.filter(question => question.topic === "Trigonometry");
+  return trigQuestions;
+}
