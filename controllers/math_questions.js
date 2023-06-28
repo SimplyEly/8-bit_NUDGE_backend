@@ -44,9 +44,9 @@ export async function algebraQuestions() {
   return algebraQuestions;
 }
 
-export async function trigQuestions() {
+export async function statisticsQuestions() {
   const data = await fs.readFile(filename);
   const questions = JSON.parse(data);
-  const trigQuestions = questions.filter(question => question.topic === "Trigonometry");
-  return trigQuestions;
+  const statisticsQuestions = questions.filter(question => question.topic === "Statistics");
+  return statisticsQuestions;
 }

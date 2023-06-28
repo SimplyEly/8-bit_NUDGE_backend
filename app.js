@@ -35,8 +35,8 @@ app.get("/math_questions/algebra", async function (req, res) {
   res.send(Questions);
 });
 
-app.get("/math_questions/trig", async function (req, res) {
-  const Questions = await trigQuestions();
+app.get("/math_questions/statistics", async function (req, res) {
+  const Questions = await statisticsQuestions();
   res.send(Questions);
 });
 
