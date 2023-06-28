@@ -2,7 +2,7 @@
 import express from "express";
 import cors from "cors";
 
-import { getQuestions, getAQuestion, tenRandomQuestions, geometryQuestions, algebraQuestions, trigQuestions } from "./controllers/math_questions.js";
+import { getQuestions, getAQuestion, tenRandomQuestions, geometryQuestions, algebraQuestions, statisticsQuestions } from "./controllers/math_questions.js";
 
 const app = express();
 
