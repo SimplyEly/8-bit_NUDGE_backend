@@ -1,6 +1,6 @@
 # 8-bit_NUDGE_backend
 
-<img width="602" alt="nudgelogo" src="https://github.com/hungalunga/8-bit_NUDGE/assets/127150103/adbd332a-588c-4d98-b0d2-387caa7c77e9">
+<img width="915" alt="nudge" src="https://github.com/SimplyEly/8-bit_NUDGE_backend/assets/127150103/0edd027b-b291-4fc8-afc6-c3060b5eb45a">
 
 ---------------------------------------------------------------------
 
