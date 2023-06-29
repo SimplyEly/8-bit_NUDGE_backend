@@ -19,13 +19,25 @@ export async function getAQuestion() {
 export async function tenRandomQuestions() {
   const data = await fs.readFile(filename);
   const tenRandomQuestions = [];
+  const questions = JSON.parse(data);
   for(let i = 0; i < 3; i++) {
-    const questions = JSON.parse(data);
     const randomIndex = Math.floor(Math.random() * questions.length);
     const randomQuestion = questions[randomIndex];
-    console.log(randomQuestion);
     tenRandomQuestions.push(randomQuestion);
-    console.log(tenRandomQuestions);
+  }
+  return tenRandomQuestions;
+}
+
+export async function tenTopicQuestions(subject) {
+  const data = await fs.readFile(filename);
+  const tenRandomQuestions = [];
+  const questions = JSON.parse(data);
+  const subjectQuestions = questions.filter((item) => item.topic === subject)
+  for(let i = 0; i < 3; i++) {
+    //const subjectQuestions = questions; 
+    const randomIndex = Math.floor(Math.random() * subjectQuestions.length);
+    const randomQuestion = subjectQuestions[randomIndex];
+    tenRandomQuestions.push(randomQuestion);
   }
   return tenRandomQuestions;
 }

@@ -2,7 +2,7 @@
 import express from "express";
 import cors from "cors";
 
-import { getQuestions, getAQuestion, tenRandomQuestions } from "./controllers/math_questions.js";
+import { getQuestions, getAQuestion, tenRandomQuestions, tenTopicQuestions } from "./controllers/math_questions.js";
 
 const app = express();
 
@@ -19,6 +19,37 @@ app.get("/math_questions", async function (req, res) {
   const Questions = await tenRandomQuestions();
   res.send(Questions);
 });
+
+
+
+app.get("/geometry_questions", async function (req, res) {
+  const Questions = await tenTopicQuestions("Geometry");
+  res.send(Questions);
+});
+
+app.get("/algebra_questions", async function (req, res) {
+  const Questions = await tenTopicQuestions("Algebra");
+  res.send(Questions);
+});
+
+app.get("/statistics_questions", async function (req, res) {
+  const Questions = await tenTopicQuestions("Statistics");
+  res.send(Questions);
+});
+
+app.get("/surprise_questions", async function (req, res) {
+  const randomIndex = Math.floor(Math.random() * 3);
+  const topics = ["Statistics", "Geometry", "Algebra"]; 
+  const randomTopic = topics[randomIndex]
+  const Questions = await tenTopicQuestions(randomTopic);
+  res.send(Questions);
+});
+
+
+
+// const Questions = await tenRandomQuestions();
+// res.send(Questions);
+// });
 
 app.get("/daily_question", async function (req, res) {
   const Question = await getAQuestion();
