@@ -84,7 +84,7 @@
     "difficulty": "Medium",
     "topic": "Algebra",
     "question": "Solve for x: 2x² - 5x - 3 = 0",
-    "answer": "x = -1, x = 3/2",
+    "answer": "x = -1/2, x = 3",
     "wrong_answers": ["x = -3/2, x = 1", "x = -3/2, x = -1", "x = 1, x = 3/2"]
   },
   {
@@ -164,7 +164,7 @@
     "difficulty": "Hard",
     "topic": "Algebra",
     "question": "Solve the simultaneous equations:\n2x + 3y = 7\n4x - 2y = 2",
-    "answer": "x = 1, y = 2",
+    "answer": "x = 5/4, y = 3/2",
     "wrong_answers": ["x = 2, y = 1", "x = 1, y = -2", "x = -1, y = 2"]
   },
   {
@@ -262,7 +262,7 @@
     "difficulty": "Easy",
     "topic": "Number",
     "question": "What is the value of 2² + 3³?",
-    "answer": "35",
+    "answer": "31",
     "wrong_answers": ["12", "17", "23"]
   },
   {
@@ -293,17 +293,17 @@
     "id": 37,
     "difficulty": "Easy",
     "topic": "Number",
-    "question": "Which of the following numbers is even? 17, 24, 31, 42",
+    "question": "Which of the following numbers is even? 17, 24, 31, 55",
     "answer": "24",
-    "wrong_answers": ["17", "31", "42"]
+    "wrong_answers": ["17", "31", "55"]
   },
   {
     "id": 38,
     "difficulty": "Easy",
     "topic": "Statistics",
-    "question": "What is the mode of the following set of numbers: 3, 5, 3, 7, 5, 3?",
+    "question": "What is the mode of the following set of numbers: 3, 5, 3, 7, 5, 3, 9?",
     "answer": "3",
-    "wrong_answers": ["5", "7", "9"]
+    "wrong_answers": ["5", "7", "6"]
   },
   {
 "id": 39,
@@ -325,9 +325,9 @@
     "id": 41,
     "difficulty": "Medium",
     "topic": "Algebra",
-    "question": "Solve for x: 3x² - 4x - 1 = 0",
-    "answer": "x = 1, x = -1/3",
-    "wrong_answers": ["x = -1/3, x = 1", "x = -1/3, x = -1", "x = 1, x = -3"]
+    "question": "Solve for x: 3x² + 4x + 1 = 0",
+    "answer": "x = -1, x = -1/3",
+    "wrong_answers": ["x = -1/3, x = 1", "x = 1/3, x = 1", "x = 1, x = -3"]
   },
   {
     "id": 42,
