@@ -21,7 +21,7 @@ app.get("/math_questions", async function (req, res) {
 });
 
 
-
+// the following three functions handle get requests for topic buttons
 app.get("/geometry_questions", async function (req, res) {
   const Questions = await tenTopicQuestions("Geometry");
   res.send(Questions);

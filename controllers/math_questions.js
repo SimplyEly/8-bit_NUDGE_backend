@@ -28,6 +28,9 @@ export async function tenRandomQuestions() {
   return tenRandomQuestions;
 }
 
+// This handles the question selection for the topic questions. 
+// (it's based on tenRandomQuestions, and the two could probably be merged in a refactor
+// but I didn't want to mess with working code at this stage (last day of bootcamp 30 Jun 2023))
 export async function tenTopicQuestions(subject) {
   const data = await fs.readFile(filename);
   const tenRandomQuestions = [];
