@@ -11,6 +11,7 @@ Our team at the School of Code bootcamp came together to address real-world issu
 - Secure login and authorisation provided by Supabase
 - Complete quizzes with a range of topics
 - View your leaderboard and your friends' scores
+- User personalisation (change username and profile picture)
 
 ## **_Getting Started_** ✅
 
@@ -33,10 +34,7 @@ To run the front-end locally follow the steps below:
 ```
 
 ## **_Tech Stack⚙️_**
-**Back-End:** Supabase, Express.js Node.js
-</br>
-**Back-End Testing:** ?
-</br>
+**Back-End:** Supabase, Express.js, Node.js
 
 ## **_Running Tests_**
 
@@ -53,5 +51,5 @@ We are 8-bit!
 - [Rosie Jones](https://github.com/rosiegracejones)
 - [Bernard Molyneux](https://github.com/CitizenBabbage)
 - [Michael Hawkes](https://github.com/octohmy)
-- [Hung Vo](https://github.com/hungalunga)
 - [Aisling Brogan-Smith](https://github.com/ashwantspizza)
+- [Hung Vo](https://github.com/hungalunga)
